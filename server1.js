@@ -8,6 +8,6 @@ function onRequest(request, response){
 	response.end();
 }
 
-http.createServer(onRequest).listen(3000);
+http.createServer(onRequest).listen(process.env.PORT || 3000);
 
 console.log('de server luistert op port 3000');
